@@ -29,5 +29,6 @@ int main() {
         cout << price << " ";
     }
 
+    
     return 0;
 }
