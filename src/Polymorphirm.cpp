@@ -4,11 +4,14 @@ using namespace std;
 class Enemy {
  protected: 
   int attackPower;
+
  public:
   void setAttackPower(int a){
    attackPower = a;
   }
-  virtual void attack() { }
+  virtual void attack() {
+    cout << "Enemy!"<<endl;
+   }
 };
 
 class Ninja: public Enemy {
@@ -27,18 +30,25 @@ class Monster: public Enemy {
 
 int main() {   
  Ninja n;
- Monster m;  
+ Monster m;
+ Enemy e;
+
  Enemy *e1 = &n;
  Enemy *e2 = &m;
+ Enemy *e3 = &e;
 
 
 e1->setAttackPower(20);
 e2->setAttackPower(80);
 
+/*
 n.attack();
 m.attack();
+*/
+
 e1->attack();
 e2->attack();
+e3->attack();
 
 }
 
