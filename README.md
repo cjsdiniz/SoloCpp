@@ -1,3 +1,3 @@
 # SoloCpp
 
-Solo C+
+## Solo C++
