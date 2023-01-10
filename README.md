@@ -1,5 +1,3 @@
 # SoloCpp
 
 ## Solo C++
-
-### Subt
