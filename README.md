@@ -1,4 +1,3 @@
 # SoloCpp
 
 ## Solo C++
-### 

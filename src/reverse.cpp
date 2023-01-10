@@ -6,6 +6,7 @@ using namespace std;
 int main() {
     int x=13432;
     // cin >> x;
+    
     //int a[x];
     int remainder;
     int reverse = 0;
