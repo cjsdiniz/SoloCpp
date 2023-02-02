@@ -3,8 +3,13 @@
 using namespace std;
 
 int main() {
-  ofstream MyFile;
-  MyFile.open("test.txt");
+  ofstream MyFile("test.txt");
 
-  MyFile << "Some text. \n";
+  if (MyFile.is_open()) {
+   MyFile << "This is awesome! \n";
+  }
+  else {
+   cout << "Something went wrong";
+  }
+  MyFile.close();
 }
